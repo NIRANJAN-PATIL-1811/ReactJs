@@ -1,0 +1,13 @@
+.main-heading {
+  font-weight: 700;
+  margin: 0.5em;
+}
+
+input, button {
+  width: 80%;
+  margin: 1em;
+}
+
+.todo-container {
+  margin: 1em;
+}

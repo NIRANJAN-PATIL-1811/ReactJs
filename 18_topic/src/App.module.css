@@ -1,0 +1,13 @@
+.main-div {
+  border: 0.1em solid black;
+  width: 50%;
+}
+
+.main-heading {
+  font-weight: 800;
+}
+
+.main-heading2 {
+  font-size: 2em;
+  color: yellow;
+}

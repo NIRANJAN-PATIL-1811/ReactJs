@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+.parent_div {
+  height: 100vh;
+  width: 100%;
+  background-color: pink;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
