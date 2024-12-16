@@ -4,11 +4,11 @@ function NavBar() {
   return (
     <>
       <div className={"nav-div"}>
-        <div className={"name-div"}>Niranjan Patil</div>
+        {/* <div className={"name-div"}>Niranjan Patil</div> */}
         <div className={"nav"}>
-          <a className="navbar-brand" href="#home">
+          {/* <a className="navbar-brand" href="#home">
             Home
-          </a>
+          </a> */}
 
           <a className="navbar-brand" href="#project">
             Projects

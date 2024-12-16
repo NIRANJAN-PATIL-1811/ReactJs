@@ -1,7 +1,9 @@
+import "./project.css";
+
 function Project(){
   return (
     <>
-      <div className={'project-div'} style={{'background-color' : 'green', 'height' : '900px'}}>
+      <div className={'project-div'}>
         <h1>Project Page!!</h1>
       </div>
     </>

@@ -1,7 +1,9 @@
+import "./about.css";
+
 function About(){
   return (
     <>
-      <div className={'about-div'} style={{'height' : '900px','background-color' : 'purple'}}><h1>about page</h1>
+      <div className={'about-div'}><h1>about page</h1>
       </div>
     </>
   );
