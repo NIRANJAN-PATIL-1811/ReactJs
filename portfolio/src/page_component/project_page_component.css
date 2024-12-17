@@ -1,0 +1,28 @@
+.page-component {
+  margin-top: 2%;
+  height: auto;
+  width: 25%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  /* background-color: rgb(255, 195, 195); */
+}
+
+.page-component:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-div{
+  width: 100%;
+  height: 83%;
+}
+
+.image-tag {
+  width: 100%;
+  height: 100%;
+}
+
+.button-1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: center;
+}
