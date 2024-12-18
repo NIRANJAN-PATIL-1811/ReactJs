@@ -1,11 +1,8 @@
 import "./home.css";
 import image from "./image.jpg";
 import video from "./video.mp4";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { BiLogoGmail } from "react-icons/bi";
 import { IoIosArrowForward } from "react-icons/io";
+import SocialMedia from "../page_component/social_media";
 
 function Home() {
   return (
@@ -17,14 +14,9 @@ function Home() {
               <div className="lines">Hi There,</div>
               <div className="lines">I'm Niranjan Patil</div>
               <div>Full-Stack Developer</div>
-              <div className="digital-media">
-                <div className="facebook"><FaFacebookSquare/></div>
-                <div className="github"><FaGithubSquare/></div>
-                <div className="insta"><FaSquareInstagram/></div>
-                <div className="gmail"><BiLogoGmail/></div>
-              </div>
+                <SocialMedia size={'200%'} color={'black'}/>
               <br />
-              <button type="button" class="btn btn-light">Know More <IoIosArrowForward/></button>
+              <button type="button" className="btn btn-light">Know More <IoIosArrowForward/></button>
             </div>
           </div>
 

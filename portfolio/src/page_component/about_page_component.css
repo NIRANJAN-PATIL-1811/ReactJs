@@ -1,0 +1,23 @@
+.about-sub-2-div {
+  background-color: rgb(229, 153, 153);
+
+  margin: 2%;
+  height: 20%;
+  width: 20%;
+  border-radius: 10%;
+
+  text-align: center;
+}
+
+.logo-div {
+  background-color: yellow;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  font-size: 700%;
+}
+
+.rating {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}

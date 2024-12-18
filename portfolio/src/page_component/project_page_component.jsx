@@ -10,7 +10,7 @@ function ProjectPageComponent({ title, image, discription }){
         </div>
 
         <div className="button-1">
-          <button type="button" class="btn btn-light">Know More <IoIosArrowForward/></button>
+          <button type="button" className="btn btn-light">Know More <IoIosArrowForward/></button>
         </div>
       </div>
     </>
