@@ -1,15 +1,28 @@
 .about-div {
   width: 100%;
   height: auto;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 2%;
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 2%; */
   margin-top: 5%;
   /* background-color: rgb(255, 163, 163) ; */
 }
 
+.about-edu-div {
+  width: 100%;
+  height: auto;
+  background-color: aqua;
+}
+
+.about-edu-div-sub {
+  margin: 4%;
+  background-color: antiquewhite;
+}
+
+
 .about-first-div {
   height: 100%;
   width: 100%;
+  margin-top: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
