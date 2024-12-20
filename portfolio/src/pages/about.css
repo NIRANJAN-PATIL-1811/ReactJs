@@ -10,12 +10,18 @@
 .about-edu-div {
   width: 100%;
   height: auto;
-  background-color: aqua;
+  display: flex;
+  text-align: center;
 }
+
 
 .about-edu-div-sub {
   margin: 4%;
-  background-color: antiquewhite;
+  font-family: "Open Sans", serif;
+  width: 80%;
+  font-size: 110%;
+  font-weight: 600;
+  text-align: center;
 }
 
 
