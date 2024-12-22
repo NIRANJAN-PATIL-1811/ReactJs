@@ -41,6 +41,9 @@ function Contact(){
                 <div className="mb-3 input-div-message">
                   <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message (Optional)"></textarea>
                 </div>
+                <div className="mb-3 input-div-message input-div-submit">
+                  <button type="button" className="btn btn-light submit-btn">Submit</button>
+                </div>
               </form>
           </div>
         </div>
