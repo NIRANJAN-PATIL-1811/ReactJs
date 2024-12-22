@@ -15,6 +15,7 @@ import { LuFigma } from "react-icons/lu";
 import { GrMysql } from "react-icons/gr";
 import { FaLinux } from "react-icons/fa6";
 import { FaBootstrap } from "react-icons/fa6";
+import video from "./video.mp4";
 
 
 function About(){
@@ -23,9 +24,14 @@ function About(){
       <div className={'about-div'}>
         <div className="about-edu-div">
           <div className="about-edu-div-sub">
-            am a 2024 MCA graduate from Savitribai Phule Pune University with a strong foundation in computer science and software development. During my academic journey, I gained expertise in programming languages, web technologies, and database management. Over the past year, I have worked as a Full Stack Developer, gaining hands-on experience in both front-end and back-end development. I have worked on building and maintaining dynamic web applications using technologies like JavaScript, Node.js, React, and databases such as MySQL and MongoDB.
+            I am a 2024 MCA graduate from Savitribai Phule Pune University with a strong foundation in computer science and software development. During my academic journey, I gained expertise in programming languages, web technologies, and database management. Over the past year, I have worked as a Full Stack Developer, gaining hands-on experience in both front-end and back-end development. I have worked on building and maintaining dynamic web applications using technologies which are included below.
           </div>
         </div>
+
+        <div className="horizontal-line-div">
+          <hr />
+        </div>
+
         <div className="about-first-div">
           <AboutPageComponent logo={<IoLogoHtml5/>} logoName={'HTML5'} />
           <AboutPageComponent logo={<IoLogoCss3/>} logoName={'CSS3'} />

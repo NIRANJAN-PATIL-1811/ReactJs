@@ -27,8 +27,8 @@ function Home() {
           </div>
           </div>
 
-          <div className="bottom-div">
-            <video src={video} autoPlay loop muted></video>
+          <div className="home-bottom-div">
+            <video src={video} autoPlay loop muted width={'100%'}></video>
             <div className="overlay">
               #Desinged with goal
             </div>

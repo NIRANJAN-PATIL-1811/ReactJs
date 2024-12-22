@@ -13,7 +13,7 @@ function Contact(){
             "Every design decision I make is focused on enhancing usability, improving accessibility, and ensuring that the user’s experience is both enjoyable and efficient."
             </div>
             <div className="left-image-text-2">
-              <SocialMedia size={'300%'} color={'white'}/>
+              <SocialMedia size={'200%'} color={'white'}/>
             </div>
           </div>
         </div>

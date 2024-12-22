@@ -8,20 +8,28 @@
 }
 
 .about-edu-div {
+  /* background-color: red; */
   width: 100%;
   height: auto;
   display: flex;
-  text-align: center;
+  justify-content: center;
 }
 
 
 .about-edu-div-sub {
+  /* background-color: yellow; */
   margin: 4%;
   font-family: "Open Sans", serif;
   width: 80%;
-  font-size: 110%;
-  font-weight: 600;
+  font-size: 80%;
+  font-weight: 370;
   text-align: center;
+}
+
+
+.horizontal-line-div {
+  width: 40%;
+  justify-self: center;
 }
 
 
