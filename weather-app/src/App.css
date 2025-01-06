@@ -8,7 +8,90 @@ html, body {
   padding: 0;
 }
 
+.bottom-div {
+  margin-top: 45vh;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.humidity-div, .description-div, .temperature-div, .visibility-div, .pressure-div {
+  margin-top: 1vh;
+}
+
+.childA {
+
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid grey;
+  background-color: rgba(143, 136, 136, 0.267);
+  color: white;
+  border-radius: 2vh;
+  height: 100px;
+  width: 200px;
+}
 
 .main-div {
-  background-color: red;
+  margin-top: 10vh;
+  height: 80vh;
+  width: 90vw;
+  border-radius: 5vh;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.summer {
+  background-image: url("images/summer.jpg");
+}
+
+.clear_sky {
+  background-image: url("images/clear_sky.jpg");
+}
+
+.overcast_cloud {
+  background-image: url("images/overcast_cloud.jpg");
+}
+
+.broken_cloud {
+  background-image: url("images/broken_cloud.jpg");
+}
+
+.scattered_cloud {
+  background-image: url("images/scattered_cloud.jpg");
+}
+
+.shower_rain {
+  background-image: url("images/shower_rain.jpg");
+}
+
+.mist {
+  background-image: url("images/mist.jpg");
+}
+
+.haze {
+  background-image: url("images/haze.jpg");
+}
+
+.fog {
+  background-image: url("images/fog.jpg");
+}
+
+.light_snow {
+  background-image: url("images/light_snow.jpg");
+}
+
+.few_cloud {
+  background-image: url("images/few_cloud.jpg");
+}
+
+.snow {
+  background-image: url("images/snow.jpg");
+}
+
+.moderate_rain {
+  background-image: url("images/moderate_rain.jpg");
+}
+
+.light_rain {
+  background-image: url("images/light_rain.jpg");
 }

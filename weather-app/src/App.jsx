@@ -9,9 +9,9 @@ function App(){
 
   const [ initialVal, changeVal ] = useState([]);
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${myRef.current.value}&appid=0c611cc00c95aa9eb3a6c339a57246e0`;
-
   function getWeather() {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${myRef.current.value}&appid=0c611cc00c95aa9eb3a6c339a57246e0`;
+    // const url = `https://api.openweathermap.org/data/2.5/weather?q=Sydney&appid=0c611cc00c95aa9eb3a6c339a57246e0`;
     async function getCurrentData(){
       await axios.get(url)
       .then((res) => changeVal(res.data))
@@ -27,19 +27,58 @@ function App(){
 
   return (
     <>
-      <div className="main-div">
+      <div>
         <center>
-            <div>WEATHER</div>
+          <div className={`main-div ${initialVal == '' ? 'summer' : 
+            initialVal == 'clear sky' ? 'clear_sky' : 
+            initialVal == 'overcast clouds' ? 'overcast_cloud' : 
+            initialVal == 'broken clouds' ? 'broken_cloud' : 
+            initialVal == 'scattered clouds' ? 'scattered_cloud' :
+            initialVal == 'shower rain' ? 'shower_rain' :
+            initialVal == 'mist' ? 'mist' :
+            initialVal == 'haze' ? 'haze' :
+            initialVal == 'fog' ? 'fog' :
+            initialVal == 'light snow' ? 'light_snow' :
+            initialVal == 'few clouds' ? 'few_cloud' :
+            initialVal == 'snow' ? 'snow' :
+            initialVal == 'light rain' ? 'light_rain' :
+            initialVal == 'moderate rain' ? 'moderate_rain' :
+            null}`}>
             <div>
               <input ref={myRef} type="text" placeholder='Enter place' />
             </div>
             <div>
               <button onClick={() => getData()} >GET</button>
             </div>
+            <div className="bottom-div">
+              <div className="div-1 childA">
+                <div className="humidity-div">Humidity
+                  <div className="humidity-div-1">{`hi`}</div>
+                </div>
+              </div>
+              <div className="div-2 childA">
+                <div className="description-div">Description
+                  {/* <div className="description-div-1">{initialVal.weather[0].description}</div> */}
+                </div>
+              </div>
+              <div className="div-3 childA">
+                <div className="temperature-div">Temperature</div>
+              </div>
+              <div className="div-4 childA">
+                <div className="visibility-div">Visibility</div>
+              </div>
+              <div className="div-5 childA">
+                <div className="pressure-div">Pressure</div>
+              </div>
+            </div>
             {
               console.log(initialVal)
             }
-        </center>  
+            {
+              console.log(typeof(initialVal.main))
+            }
+          </div>
+        </center> 
       </div>  
     </>
   );
