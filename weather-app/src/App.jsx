@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import axios from 'axios';
+import { useState, useRef } from 'react';
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+// 0c611cc00c95aa9eb3a6c339a57246e0
+
+function App(){
+  const myRef = useRef();
+
+  const [ initialVal, changeVal ] = useState([]);
+
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${myRef.current.value}&appid=0c611cc00c95aa9eb3a6c339a57246e0`;
+
+  function getWeather() {
+    async function getCurrentData(){
+      await axios.get(url)
+      .then((res) => changeVal(res.data))
+      .catch((error) => console.error(error))
+    }
+
+    getCurrentData();
+  }
+
+  function getData(){
+    getWeather();
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="main-div">
+        <center>
+            <div>WEATHER</div>
+            <div>
+              <input ref={myRef} type="text" placeholder='Enter place' />
+            </div>
+            <div>
+              <button onClick={() => getData()} >GET</button>
+            </div>
+            {
+              console.log(initialVal)
+            }
+        </center>  
+      </div>  
     </>
-  )
+  );
 }
 
-export default App
+export default App;
