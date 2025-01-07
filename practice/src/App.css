@@ -1,3 +1,23 @@
+<<<<<<< HEAD
 .main-div {
   background: linear-gradient(to right, red 30%, blue 30%, blue 60%  60% yellow yellow 100%);
+=======
+html, body {
+  height: 100%;
+}
+
+
+.app-1 {
+  max-height: 50vh;
+  overflow-y: scroll;
+  text-align: center;
+  justify-self: center;
+  /* margin-top: 10%; */
+  width: 75%;
+  background-color: pink;
+}
+
+.title-div {
+  font-size: 200%;
+>>>>>>> 8932159f88639663baf93d5c0d25b4a35ad6d8c5
 }

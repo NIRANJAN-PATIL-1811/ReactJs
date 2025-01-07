@@ -64,10 +64,10 @@
 }
 
 .overlay {
-  /* background-color: red; */
   position: absolute;
+  width: 100%;
   top: 40%;
-  left: 28%;
+  text-align: center;
   color: white;
 
   font-family: "Playfair Display", serif;
@@ -80,13 +80,13 @@
 .overlay-2 {
   position: absolute;
   top: 53%;
-  left: 28%;
+  width: 100%;
   color: white;
+  text-align: center;
 
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 600;
-  font-size: 200%;
-  width: 50%;
+  font-size: 120%;
 }

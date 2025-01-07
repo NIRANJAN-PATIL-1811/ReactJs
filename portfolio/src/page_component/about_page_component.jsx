@@ -1,8 +1,6 @@
 import "./about_page_component.css";
 
-
-
-function AboutPageComponent({logo, logoName}){
+function AboutPageComponent({ logo, logoName }) {
   return (
     <>
       <div className="about-sub-2-div">
