@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-div {
+  background-color: rgb(231, 222, 224);
+  margin-left: 30vw;
+  margin-top: 10vh;
+  height: 55vh;
+  width: 40vw;
+  position: fixed;
+}
+
+.joke-div {
+  /* background-color: rgb(211, 117, 117); */
+  margin-top: 10vh;
+}
+
+.joke-div-2 {
+  /* background-color: rgb(211, 117, 117); */
+  margin-top: 2vh;
+}
+
+.btn-div {
+  margin-top: 15vh;
+}

@@ -48,9 +48,6 @@ function App(){
               <input ref={myRef} className="form-control" type="text" placeholder="Enter place"></input>
               <button onClick={() => getData()} type="button" className="btn btn-success">Get</button>
             </div>
-            {/* {
-              console.log(initialVal.weather[0].description)
-            } */}
             <div className="bottom-div">
               <div className="div-1 childA">
                 <div className="humidity-div">Humidity
