@@ -5,9 +5,7 @@ function App() {
   return (
     <>
       <div className="parent_div">
-        <Parent_div>
-
-        </Parent_div>
+        <Parent_div></Parent_div>
       </div>
     </>
   );

@@ -6,10 +6,10 @@ import money from "./money.jpg";
 import shopping from "./shopping.jpg";
 import connect from "./connect.jpg";
 
-function Project(){
+function Project() {
   return (
     <>
-      <div className={'project-div'}>
+      <div className={"project-div"}>
         <ProjectPageComponent image={image} />
         <ProjectPageComponent image={old} />
         <ProjectPageComponent image={money} />
@@ -19,6 +19,5 @@ function Project(){
     </>
   );
 }
-
 
 export default Project;

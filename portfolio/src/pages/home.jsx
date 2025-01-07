@@ -14,29 +14,35 @@ function Home() {
               <div className="lines">Hi There,</div>
               <div className="lines">I'm Niranjan Patil</div>
               <div>Full-Stack Developer</div>
-                <SocialMedia size={'200%'} color={'black'}/>
+              <SocialMedia size={"200%"} color={"black"} />
               <br />
-              <button type="button" className="btn btn-light">Know More <IoIosArrowForward/></button>
+              <button type="button" className="btn btn-light">
+                Know More <IoIosArrowForward />
+              </button>
             </div>
           </div>
 
           <div className="right-div">
             <div className="right-sub-div">
-              <img className={'image'} src={image} alt="Niranjan Patil" width={'30%'} />
+              <img
+                className={"image"}
+                src={image}
+                alt="Niranjan Patil"
+                width={"30%"}
+              />
             </div>
           </div>
-          </div>
+        </div>
 
-          <div className="home-bottom-div">
-            <video src={video} autoPlay loop muted width={'100%'}></video>
-            <div className="overlay">
-              #Desinged with goal
-            </div>
+        <div className="home-bottom-div">
+          <video src={video} autoPlay loop muted width={"100%"}></video>
+          <div className="overlay">#Desinged with goal</div>
 
-            <div className="overlay-2">
-              Passion that creates intuitive, usable, and aesthetically pleasing digital products
-            </div>
+          <div className="overlay-2">
+            Passion that creates intuitive, usable, and aesthetically pleasing
+            digital products
           </div>
+        </div>
       </div>
     </>
   );

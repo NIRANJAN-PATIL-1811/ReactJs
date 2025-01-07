@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+}
+
+
+.app-1 {
+  max-height: 50vh;
+  overflow-y: scroll;
+  text-align: center;
+  justify-self: center;
+  /* margin-top: 10%; */
+  width: 75%;
+  background-color: pink;
+}
+
+.title-div {
+  font-size: 200%;
+}
