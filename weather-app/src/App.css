@@ -18,12 +18,12 @@ html, body {
 
 .form-control {
   width: 30vw;
-  height: 4vh;
+  height: 5vh;
 }
 
 .btn {
   width: 6vw;
-  height: 4vh;
+  height: 5vh;
 }
 
 .bottom-div {
@@ -122,4 +122,8 @@ html, body {
 
 .light_rain {
   background-image: url("images/light_rain.jpg");
+}
+
+.smoke {
+  background-image: url("images/smoke.jpg");
 }

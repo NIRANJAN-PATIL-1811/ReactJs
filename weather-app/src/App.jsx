@@ -8,7 +8,6 @@ function App(){
   const myRef = useRef();
 
   const [ initialVal, changeVal ] = useState([]);
-  const [ initialVal2, changeVal2 ] = useState();
 
   function getWeather() {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${myRef.current.value}&appid=0c611cc00c95aa9eb3a6c339a57246e0`;
@@ -16,7 +15,6 @@ function App(){
     async function getCurrentData(){
       await axios.get(url)
       .then((res) => changeVal(res.data))
-      .catch(changeVal2(true))
     }
 
     getCurrentData();
@@ -31,24 +29,28 @@ function App(){
       <div>
         <center>
           <div className={`main-div ${initialVal == '' ? 'summer' : 
-            initialVal == 'clear sky' ? 'clear_sky' : 
-            initialVal == 'overcast clouds' ? 'overcast_cloud' : 
-            initialVal == 'broken clouds' ? 'broken_cloud' : 
-            initialVal == 'scattered clouds' ? 'scattered_cloud' :
-            initialVal == 'shower rain' ? 'shower_rain' :
-            initialVal == 'mist' ? 'mist' :
-            initialVal == 'haze' ? 'haze' :
-            initialVal == 'fog' ? 'fog' :
-            initialVal == 'light snow' ? 'light_snow' :
-            initialVal == 'few clouds' ? 'few_cloud' :
-            initialVal == 'snow' ? 'snow' :
-            initialVal == 'light rain' ? 'light_rain' :
-            initialVal == 'moderate rain' ? 'moderate_rain' :
+            initialVal.weather[0].description == 'clear sky' ? 'clear_sky' : 
+            initialVal.weather[0].description == 'overcast clouds' ? 'overcast_cloud' : 
+            initialVal.weather[0].description == 'broken clouds' ? 'broken_cloud' : 
+            initialVal.weather[0].description == 'scattered clouds' ? 'scattered_cloud' :
+            initialVal.weather[0].description == 'shower rain' ? 'shower_rain' :
+            initialVal.weather[0].description == 'mist' ? 'mist' :
+            initialVal.weather[0].description == 'haze' ? 'haze' :
+            initialVal.weather[0].description == 'fog' ? 'fog' :
+            initialVal.weather[0].description == 'light snow' ? 'light_snow' :
+            initialVal.weather[0].description == 'few clouds' ? 'few_cloud' :
+            initialVal.weather[0].description == 'snow' ? 'snow' :
+            initialVal.weather[0].description == 'light rain' ? 'light_rain' :
+            initialVal.weather[0].description == 'moderate rain' ? 'moderate_rain' :
+            initialVal.weather[0].description == 'smoke' ? 'smoke' :
             null}`}>
             <div className={'input-btn'}>
               <input ref={myRef} className="form-control" type="text" placeholder="Enter place"></input>
               <button onClick={() => getData()} type="button" className="btn btn-success">Get</button>
             </div>
+            {/* {
+              console.log(initialVal.weather[0].description)
+            } */}
             <div className="bottom-div">
               <div className="div-1 childA">
                 <div className="humidity-div">Humidity
