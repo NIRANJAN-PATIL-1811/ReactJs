@@ -8,6 +8,7 @@ function App(){
   const myRef = useRef();
 
   const [ initialVal, changeVal ] = useState([]);
+  const [ initialVal2, changeVal2 ] = useState();
 
   function getWeather() {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${myRef.current.value}&appid=0c611cc00c95aa9eb3a6c339a57246e0`;
@@ -15,7 +16,7 @@ function App(){
     async function getCurrentData(){
       await axios.get(url)
       .then((res) => changeVal(res.data))
-      .catch((error) => console.error(error))
+      .catch(changeVal2(true))
     }
 
     getCurrentData();
