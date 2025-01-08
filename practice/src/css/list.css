@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.list-div {
+  background-color: rgb(166, 99, 99);
+  height: 60vh;
+  width: 50vw;
+}
+
+.list-heading {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-data {
+  margin: 6vh;
+  background-color: green;
+  height: 35vh;
+  width: 45vw;
+  overflow-y: scroll;
+}

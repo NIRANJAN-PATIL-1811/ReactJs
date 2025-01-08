@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.cal-div {
+  background-color: rgb(163, 184, 140);
+  height: 60vh;
+  width: 22vw;
+}

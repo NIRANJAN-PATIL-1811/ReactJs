@@ -1,21 +1,14 @@
-import "./App.css";
+import "./css/App.css";
+import List from "./list.jsx";
+import Cal from "./cal.jsx";
 
 
 function App(){
   return (
     <>
       <div className="main-div">
-        <div className="sub1">
-
-          {/* <div className="input-div">
-            <input className="input-div1" type="text" />
-          </div> */}
-
-          <div className="btn">
-            <button className="btn1" >Add</button>
-          </div>
-
-        </div>
+        <List></List>
+        <Cal></Cal>
       </div>
     </>
   );
