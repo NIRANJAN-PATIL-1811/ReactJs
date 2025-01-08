@@ -40,8 +40,7 @@ html, body {
 .childA {
 
   box-shadow: 0vh 0vh 2vh 0.3vh rgba(0, 0, 0, 0.3);
-  border: 0.1vh solid grey;
-  background-color: rgba(143, 136, 136, 0.267);
+  background-color: rgba(165, 156, 156, 0.218);
   color: white;
   border-radius: 2vh;
   height: 14vh;
