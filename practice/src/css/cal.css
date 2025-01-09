@@ -13,3 +13,27 @@ html, body {
   height: 60vh;
   width: 22vw;
 }
+
+.cal-main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.display {
+  margin-top: 2vh;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+
+.all-btn {
+  height: 8.5vh;
+  width: 6vw;
+}

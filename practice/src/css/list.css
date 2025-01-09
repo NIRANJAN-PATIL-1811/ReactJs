@@ -8,8 +8,15 @@ html, body {
   padding: 0;
 }
 
+.input-div {
+  background-color: green;
+  /* display: flex;
+  justify-content: center;
+  margin-top: 2vh; */
+}
+
 .list-div {
-  background-color: rgb(166, 99, 99);
+  border: 1px solid black;
   height: 60vh;
   width: 50vw;
 }
@@ -25,13 +32,25 @@ html, body {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
+
 
 .main-data {
   margin: 6vh;
-  background-color: green;
+  border: 1px solid black;
   height: 35vh;
   width: 45vw;
   overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.total-val {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }

@@ -4,16 +4,25 @@ import { useState,useRef } from "react";
 
 function List(){
   const [ initialVal, changeVal ]  = useState([]);
+  const [ initialVal2, changeVal2 ] = useState(1000);
+  const [ initialValue, changeValue ] = useState(0);
 
   const input_data1 = useRef();
   const input_data2 = useRef();
 
   function getData(){
-    const newItem = { TASK: input_data1.current.value, DATE: input_data2.current.value };
+    const newItem = { TASK: input_data1.current.value, VALUE: input_data2.current.value };
     changeVal([...initialVal, newItem]);
+    changeValue(eval(`${initialValue} + ${input_data2.current.value}`));
+    changeVal2(eval(`${initialVal2} - ${input_data2.current.value}`));
+    input_data1.current.value = '';
+    input_data2.current.value = '';
+
   }
 
   function deleteData(index){
+    changeValue(eval(`${initialValue} - ${initialVal[index].VALUE}`));
+    changeVal2(eval(`${initialVal2} + ${initialVal[index].VALUE}`));
     const newData = initialVal.filter((_, item) => item !== index)
     changeVal(newData);
   }
@@ -21,6 +30,7 @@ function List(){
   return (
     <>
       <div className="list-div">
+        
         <div className="list-heading">       
 
           <div className="container text-center">
@@ -31,13 +41,13 @@ function List(){
               </div>
 
               <div className="col-5">
-                <input ref={input_data2} type="date" className="form-control" />
+                <input ref={input_data2} type="text" className="form-control" placeholder="Enter amount" />
               </div>
 
               <div className="col-2">
                 <button onClick={() => getData()} className="btn btn-success">Add</button>
               </div>
-
+              
             </div>
           </div>
         </div>
@@ -48,13 +58,13 @@ function List(){
               {
                 initialVal.length == 0 ? null :
                 initialVal.map((item, index) => (
-                  <div key={index} className="row">
+                  <div key={index} className="row data-row">
                     <div className="col-5">
                       {item.TASK}
                     </div>
 
                     <div className="col-5">
-                      {item.DATE}
+                      {item.VALUE}
                     </div>
 
                     <div className="col-2">
@@ -66,6 +76,8 @@ function List(){
               }
             </div>
           </div>
+          <div className="total-val">Total Amount : {initialValue}</div>
+          <div className="total-val">Remaining Amount : {initialVal2}</div>
       </div>
     </>
   );
