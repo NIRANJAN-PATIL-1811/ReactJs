@@ -17,7 +17,7 @@ function App(){
       .then((res) => changeVal(res.data))
     }
 
-    getCurrentData()
+    getCurrentData();
   }
 
   function getData(){
