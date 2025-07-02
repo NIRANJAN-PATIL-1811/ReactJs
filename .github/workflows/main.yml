@@ -1,0 +1,57 @@
+name: Build & Deploy
+
+on:
+  push:
+    paths:
+      - 'weather-app'
+
+env:
+  CI: false
+
+jobs:
+  build:
+    name: build-weather-app
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 20
+
+      - name: Install Dependencis
+        run: |
+          cd weather-app
+          npm install
+
+      - name: Build Project
+        run: |
+          cd weather-app
+          npm run build
+
+      - name: Test
+        run: |
+            cd weather-app
+            npm test
+
+    
+  deploy:
+    name: deploy
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Artifacts Download
+        uses: actions/download-artifacts@v2
+        with:
+          name: production-files
+          path: ./build
+
+      - name: Deploy github pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: {{secret.TOKEN}}
+          publish_dir: ./build
