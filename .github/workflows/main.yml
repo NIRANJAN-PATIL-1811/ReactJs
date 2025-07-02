@@ -2,8 +2,8 @@ name: Build & Deploy
 
 on:
   push:
-    paths:
-      - 'weather-app'
+    branches:
+      - main
 
 env:
   CI: false
